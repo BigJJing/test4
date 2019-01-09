@@ -1,23 +1,74 @@
-<html>
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
-  <style>
-  body{
-    text-align: center;
-  }
-    button{
-      width: 30%;
-      height: 5%;
-      position: fixed;
-      bottom:10px;
-      left:40%;
-      font-size: 1.5em;
-    }
-  </style>
-</head>
-<body>
-  <img src="img/intro/business.png" />
-  <button>按钮</button>
-</body>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/index.css" >
+
+  <body>
+
+    <div data-role="page" id="pageone">
+      <!--面板 -->
+      <div data-role="panel" id="overlayPanel" data-display="overlay">
+        <div class="head-top">
+          <div class="photo" id="photo"><img src="img/photo.jpg" /></div>
+          <div class="link">
+            <a href="#">登录</a><a>|</a><a href="#">注册</a>
+          </div>
+        </div>
+        <div class="head-center">
+          <ul id="panelMenu">
+            <li><a href="#"><i class="icon-pshopcar"></i><font>购物车</font></a></li>
+            <li><a href="#"><i class="icon-pmine"></i>个人中心</a></li>
+            <li><a href="#"><i class="icon-porders"></i>我的订单</a></li>
+            <li><a href="#"><i class="icon-pcards"></i>卡券包</a></li>
+            <li><a href="#"><i class="icon-pservers"></i>售后服务</a></li>
+          </ul>
+        </div>
+        <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">关闭面板</a>
+      </div>
+      <!--主页面 -->
+      <div data-role="header" id="header">
+        <a href="#overlayPanel" class="left-btn ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all ui-nodisc-icon">菜单</a>
+        <a class="right-btn ui-btn ui-icon-action ui-btn-icon-notext ui-corner-all ui-nodisc-icon">11</a>
+      </div>
+      <div data-role="main" id="main">
+        <div class="banner" id="banner" data-role="main">
+          <ul id="images">
+            <li data-role="main"><img src="img/1.jpg"  /></li>
+            <li data-role="main"><img src="img/2.jpg"  /></li>
+            <li data-role="main"><img src="img/3.jpg"  /></li>
+          </ul>
+          <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ol>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-navbar">
+          <a>
+            <i class="icon-home"></i>
+            <span>首页</span>
+          </a>
+          <a>
+            <i class="icon-shopcar"></i>
+            <span>购物车</span>
+          </a>
+          <div class="right">
+            <input type="button" value="加入购物车" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 引入 jQuery 库 -->
+    <script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- 引入 jQuery Mobile 库 -->
+    <script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/reset.js"></script>
+    <script src="js/index.js"></script>
+  </body>
 </html>
